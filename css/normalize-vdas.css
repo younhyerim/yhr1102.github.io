@@ -1,0 +1,219 @@
+
+/**
+ * 1.0 연계 CSS 로드
+ * -----------------------------------------------------------------------------
+ */
+ 
+
+/**
+ * 2.0 기본설정
+ * -----------------------------------------------------------------------------
+ */
+ 
+body { margin:0; }
+
+a { 
+    color: #8e939b;
+    text-decoration: none; 
+    outline: 0!important; 
+}
+
+
+
+a:hover,a:focus {color: #5c6065;}
+
+a:active{color: #ffffea;}
+
+ul,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+div,h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Montserrat,sans-serif;
+    text-transform:uppercase;
+    color: #303030;
+}
+
+h2,h3,h4 {
+    font-family: Montserrat,sans-serif;
+    color: #303030;
+}
+
+
+
+p, ul li{
+    color: #656565;
+    font-size: 17px;
+    font-family: 'NotoSans-Thin','Open Sans',sans-serif;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+strong {
+    font-family:'Open Sans',sans-serif;
+    text-transform: uppercase;
+    margin-right: 2px;
+    margin-left: 3px;
+    
+}
+
+button {
+    font-family: Montserrat,sans-serif;
+    text-transform: uppercase;
+}
+
+
+/* 웹 폰트 로드 */
+@font-face {
+    font-family: NotoSans-Regular;
+    src: url(../fonts/NotoSans/NotoSans-Regular.eot); /*IE9 호환성 보기*/
+    src: local("☺"),
+    url(../fonts/NotoSans/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans/NotoSans-Regular.woff) format('woff'),
+    url(../fonts/NotoSans/NotoSans-Regular.woff) format('woff2');
+}
+
+@font-face {
+    font-family: NotoSans-Light;
+    src: url(../fonts/NotoSans/NotoSans-Light.eot); /*IE9 호환성 보기*/
+    src: local("☺"),
+    url(../fonts/NotoSans/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans/NotoSans-Light.woff) format('woff'),
+    url(../fonts/NotoSans/NotoSans-Light.woff) format('woff2');
+}
+
+@font-face {
+    font-family: NotoSans-Thin;
+    src: url(../fonts/NotoSans/NotoSans-Thin.eot); /*IE9 호환성 보기*/
+    src: local("☺"),
+    url(../fonts/NotoSans/NotoSans-Thin.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans/NotoSans-Thin.woff) format('woff'),
+    url(../fonts/NotoSans/NotoSans-Thin.woff) format('woff2');
+}
+
+
+@font-face {
+    font-family: NotoSans-Bold;
+    src: url(../fonts/NotoSans/NotoSans-Bold.eot); /*IE9 호환성 보기*/
+    src: local("☺"),
+    url(../fonts/NotoSans/NotoSans-Bold?#iefix) format('embedded-opentype'),
+    url(../fonts/NotoSans/NotoSans-Bold.woff) format('woff'),
+    url(../fonts/NotoSans/NotoSans-Bold.woff) format('woff2');
+}
+
+/**
+ * 3.0 단 제어
+ * -----------------------------------------------------------------------------
+ */
+ 
+
+/**
+ * 4.0 기본구조
+ * -----------------------------------------------------------------------------
+ */
+ 
+
+/**
+ * 5.0 구버전 브라우저 대응
+ * -----------------------------------------------------------------------------
+ */
+ 
+.alert-ie { margin:0; padding:1em; font-family:NotoSans-Light,NotoSans-Regular; font-size:11px; letter-spacing:-1px; color:#ebebeb; background: #808080; }
+.alert-ie a { color:#ebebeb; }
+
+/**
+ * 6.0 사용자 정의
+ * -----------------------------------------------------------------------------
+ */
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*----지정 클라스-----*/
+.pt-55{padding-top: 55px;}
+
+/* =============================================================================
+   8. 도움용 모듈 설정
+   ============================================================================= */
+
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8.col-md-9,.col-md-10,.col-md-12
+{
+    padding-left: 0px;
+    padding-right: 0;
+}
+
+@media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
+    .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8.col-md-9,.col-md-10,.col-md-12
+{
+    padding-left: 16px;
+    padding-right:16px;
+}
+
+}
+
+/* =============================================================================
+   사용자화 그리드
+   ============================================================================= */
+
+.row-vdas {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+
+
+/* remove spacing between middle columns */
+.row.no-gutter [class*='col-']:not(:first-child):not(:last-child) {
+  padding-right:5px;
+  padding-left:5px;
+}
+/* remove right padding from first column */
+.row.no-gutter [class*='col-']:first-child {
+  padding-right:5px;
+}
+/* remove left padding from first column */
+.row.no-gutter [class*='col-']:last-child {
+  padding-left:5px;
+}
+
+/* only for column content visible */
+.col-sm->div {background-color:#ddd;}
+
+
