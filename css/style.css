@@ -209,6 +209,11 @@ header h1 a {
     background-size: cover;
 }
 
+.r_img-1{background-image: url(../img/about.png);}
+.r_img-2{background-image: url(../img/portfolio_1.png)}
+.r_img-3{background-image: url(../img/contact_1.png)}
+
+
 @media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
     .left_box,.right_box {
         float:none;
