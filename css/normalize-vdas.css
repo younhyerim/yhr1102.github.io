@@ -49,11 +49,8 @@ h2,h3,h4 {
 
 
 p, ul li{
-    color: #656565;
     font-size: 17px;
-    font-family: 'NotoSans-Thin','Open Sans',sans-serif;
-    line-height: 30px;
-    margin-bottom: 15px;
+    font-family: 'NotoSans','Open Sans',sans-serif;
 }
 
 
