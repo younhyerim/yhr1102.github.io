@@ -121,7 +121,7 @@ header h1 a {
     
     .side-collapse{width: 100%;}
     
-    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{border: none;}
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{border: none; width: 100%;}
     
     .navbar-toggle{border-radius:0;}
 }
@@ -245,6 +245,13 @@ header h1 a {
     color: #303030;
 }
 
+@media screen and (max-width:768px) { /*화면크기가 768 이하인 경우*/
+    .header-sub .navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    }
+}
+
+
 .container.container-padding{padding-bottom: 80px;}
 
 .container-abuot .row .col-md-8 h1 {
@@ -347,6 +354,126 @@ header h1 a {
     line-height: 20px;
     padding-right: 80px;
 }
+
+/*portfolio*/
+.portfolio_container h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.portfolio_list ul li {
+    float: left;
+    width: 48%;
+    height: 600px;
+    margin-right: 2%;
+    margin-top: 2%;
+    border-top:1px solid #333;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.portfolio_list ul li:nth-child(2n){margin-right: 0;}
+
+@media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
+    .portfolio_list ul li {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+
+.portfolio_list ul li h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.portfolio_list ul li p{font-size: 20px;}
+.portfolio_list ul li p span{margin-right:30px;}
+
+.portfolio_list ul li div {
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio_list ul li img{width: 20px; margin-right:10px;}
+
+.title-arch {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.project-2 {
+	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
+}
+
+.project-3 {
+	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
+}
+
+.project-4 {
+	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
+}
+
+.project-hover {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background-color: rgba(186, 232, 2, 0.7);
+    box-sizing: border-box;
+    padding:10% 5%;
+}
+
+.project-hover hr {
+	height: 30px;
+	width: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background-color: rgba(255, 255, 255, 1);
+	border: 0;
+}
+
+.project-hover a {
+	color: rgba(255, 255, 255, 1);
+	padding: 2px 22px;
+	line-height: 40px;
+	border: 2px solid rgba(255, 255, 255, 1);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.project-hover a:hover {
+	border-color: rgba(51, 51, 51, 1);
+	color: rgba(51, 51, 51, 1);
+	background-color: #FFF;
+}
+
+.project:hover .project-hover {
+	opacity: 1;
+}
+
+.project:hover .project-hover hr {
+	width: 100%;
+	height: 5px;
+}
+
+
+
+
 
 
 
