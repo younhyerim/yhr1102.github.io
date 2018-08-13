@@ -37,8 +37,13 @@ width:auto;
 .carousel-indicators li.active{margin-bottom:5px; background:#00a199;}
 
 /*공통*/
+.tc{text-align: center;}
+.tl{text-align: left;}
+.tr{text-align: right;}
 .container-width{width: 90.125vw; margin: 0 auto;}
-
+.grid{padding:0px 70px;height: 100%;}
+.grid_3{width: 1200px;height: 100%;margin:0 auto}
+div,a{background-repeat: no-repeat;}
 
 
 
@@ -49,13 +54,13 @@ header {
     position: absolute;
     z-index: 100;
     width: 100%;
-    padding: 18px;
+    padding: 15px 40px;
 }
 
 header .container{}
 
 header h1 {
-    width: 80px;
+    width: 200px;
     height: 80px;
     float: left 
 }
@@ -64,7 +69,7 @@ header h1 a {
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url(../img/logo.svg);
+    background-image: url(../img/logo.png);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -75,7 +80,7 @@ header h1 a {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #fff;
+    color: #20000c;
     margin-left: 30px;
 }
 
@@ -127,113 +132,104 @@ header h1 a {
 }
     
 /*main*/
-.carousel-inner .content-hr{height: 100%;}
-
-.left_box {
-    float:left;
-    width: 55%;
-    padding: 125px 28px 0px;
-    height: 100%;
-    background-color: #f5f5f5
-}
-
-.left_box h1 {
-    font-size: 18px;
-    margin-top: 180px;
-    margin-bottom:40px;
-}
-
-.left_box h2 {
-    font-size:45px;
-    font-weight: bold;
-    color:#222;
-    margin-bottom: 20px;
-}
-
-.left_box p {
-    font-size: 21px;
-    color: #9e9e9e;
-    margin-bottom: 70px;
-    font-weight: 300;
-}
-
-.left_box-2 p{margin-bottom: 20px;}
-
-.more_btn span {
-    background-image: url(../img/move.svg);
-    background-position: right;
+.main {
+    background-color: #fff8f8;
+    background-image: url(../img/main.png);
+    background-size: 100%;
     background-repeat: no-repeat;
-    width:45px;
-    height: 100%;
+    background-position: bottom;
+}
+
+.main .text_box{padding-top: 15%;}
+.text_box{padding-top: 20%;}
+
+.text_box h1 {
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+
+.text_box h2 {
+    font-size: 18px;
+    margin-bottom: 36px;
+}
+
+.text_box p {
+    line-height: 36px;
+    margin-bottom: 88px;
+}
+
+.main_2 {
+    background-image: url(../img/about_m.png);
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.main_2 .grid_3 {
+    background-image: url(../img/about_m2.png);
+    background-position: right ,bottom;
+}
+
+.main_3 {
+    background-color: #fffbfb;
+    background-image: url(../img/contact.png);
+    background-position: left;
+    background-size: 45%;
+}
+
+.main_3 .text_box{padding-left: 40%;}
+
+.main_4 .grid_3{height:90%;}
+
+.main_4 .text_box a{background-color: #ff039d;}
+
+.main .text_box a {
     display: inline-block;
-    float: right;
-    
+    width: 226px;
+    height: 84px;
+    border-radius: 50px;
+    background-color: #ff039d;
+    color:#fff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 84px;
 }
 
-.more_btn {
+.text_box a {
+    display: inline-block;
+    height: 68px;
+    padding: 0px 76px;
+    border-radius: 50px;
+    background-color: #423455;
+    color:#fff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 69px;
+}
+
+footer {
+    height: 162px;
+    border-top: 1px solid #eee;
+    padding-top: 2%;
+}
+
+footer .grid h1 {
+    width: 200px;
+    height:32px;
+    float: left;
+}
+
+footer .grid h1 a {
     display: block;
-    width: 250px;
-    height: 50px;
-    border:1px solid #000;
-    font-size:18px;
-    font-weight: 500;
-    color: #222;
-    line-height: 48px;
-    padding:0px 18px;
-}
-
-.more_btn:hover {
-    background-color: #000;
-    color: #fff;
-    transition: .3s;
-    text-decoration: none;
-}
-.more_btn:hover span{background-image: url(../img/move_w.svg);}
-
-
-
-.right_box {
-    float:right;
-    width: 45%;
-    height: 100%;
-    background-color: #000;
-    padding: 125px 66px 66px;
-    padding-right: 31px;
-}
-
-.right_box div {
     width: 100%;
     height: 100%;
-    background-color: #fff;
-    background-position: center;
-    background-size: cover;
+    background-image: url(../img/footer_logo.png);
+    background-size: 70%
 }
 
-.r_img-1{background-image: url(../img/about.png);}
-.r_img-2{background-image: url(../img/portfolio_1.png)}
-.r_img-3{background-image: url(../img/contact_1.png)}
+footer .grid p{float: left;font-size: 14px;margin-left: 40px;}
 
-
-@media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
-    .left_box,.right_box {
-        float:none;
-        width: 100%;
-    }
-    .left_box{height: 60%;}
-    
-    .right_box {
-        height: 40%;
-        padding: 20px
-    }
-    
-    .left_box h1{margin-top:8px;}
-    
-    .left_box h2{font-size:30px;}
-    
-    .left_box p{margin-bottom: 20px;}
-}
-
-
+.sns{float: right;}
+.sns a:first-child{margin-right: 30px;}
 
 
 
@@ -243,6 +239,8 @@ header h1 a {
 
 .header-sub .navbar-inverse .navbar-nav>li>a {
     color: #303030;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width:768px) { /*화면크기가 768 이하인 경우*/
@@ -255,7 +253,7 @@ header h1 a {
 .container.container-padding{padding-bottom: 80px;}
 
 .container-abuot .row .col-md-8 h1 {
-    color:#303030;
+    color:#322d3a;
     position: absolute;
     z-index: 100;
     font-size:188px;
@@ -277,6 +275,7 @@ header h1 a {
     padding-top: 72px;
     padding-left: 190px;
     padding-right: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 @media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
@@ -290,6 +289,7 @@ header h1 a {
 .container-abuot .row .col-md-4 ul li h2 {
     font-size: 18px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .container-abuot .row .col-md-4 ul li p{margin-bottom: 0;}
@@ -299,7 +299,7 @@ header h1 a {
     height: 700px;
     margin-top: 80px;
     position: relative;
-    background-image: url(../img/my.jpg);
+    background-image: url(../img/about_banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -309,15 +309,18 @@ header h1 a {
     .container-abuot .row .col-md-12 {
         height: 600px;
         margin-top:0px;
+        background-position:17%;
     }
 }
 
 .container-abuot .row .col-md-8.col-md-offset-4{padding:80px 0 0;}
 
 .container-abuot .row .col-md-8.col-md-offset-4 p {
+    font-family: 'Raleway', sans-serif;
     font-size:40px;
-    font-weight: bold;
+    font-weight: 600;
     line-height:50px;
+    color: #4e4a54;
 }
 
 
@@ -330,26 +333,36 @@ header h1 a {
     .skill-box h1{padding:20px 16px 85px;}
 }
 
-.skill-box .col-md-3{text-align: left;}
+.skill-box div {
+    float:left;
+    width: 20%;
+    text-align: left;
+}
 
 @media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
-    .skill-box .col-md-3{margin-bottom: 60px;}
+    .skill-box .div{margin-bottom: 60px;}
 }
 
-.skill-box .col-md-3 img {
-    display: block; 
-    width: 84px;
-    height: 84px;
-    background-color: #000;
-    margin-bottom:40px;
+.skill-box div span {
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 5px;
+    background-color: #322d3a;
+    margin-bottom: 64px;
+    text-align: center;
+    font-size: 50px;
+    color: #ff039d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    line-height: 105px;
 }
-
-.skill-box .col-md-3 h2 {
+.skill-box div h2 {
     font-size: 25px;
     margin-bottom:15px;
 }
 
-.skill-box .col-md-3 p {
+.skill-box div p {
     font-size: 15px;
     line-height: 20px;
     padding-right: 80px;
