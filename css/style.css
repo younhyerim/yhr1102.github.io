@@ -33,8 +33,8 @@ height:20px;
 right:10px; left:auto;
 width:auto;
 }
-.carousel-indicators li{display:block; margin-bottom:5px; border:1px solid #00a199; }
-.carousel-indicators li.active{margin-bottom:5px; background:#00a199;}
+.carousel-indicators li{display:block; margin-bottom:5px; border:1px solid #ff039d; }
+.carousel-indicators li.active{margin-bottom:5px; background:#ff039d;}
 
 /*공통*/
 .tc{text-align: center;}
@@ -50,6 +50,8 @@ div,a{background-repeat: no-repeat;}
         padding: 68px 14px;
         width: 100%;
     }
+    
+    .carousel-indicators{display: none;}
 }
 
 
@@ -294,7 +296,7 @@ footer .grid p {
     
     .main_3{background-size: 100%;}
     
-    .text_box p{margin-bottom:28px;}
+    .grid .text_box p{margin-bottom:36px;}
     
     footer .grid {
         padding: 3px;
