@@ -77,6 +77,7 @@ header h1 a {
 .navbar-collapse {
     float: right;
     margin-top: 25px;
+    padding:0px;
 }
 
 .navbar-collapse .navbar-nav li a:hover {
@@ -243,7 +244,7 @@ footer .grid p {
     margin-left: 40px;
 }
 
-.sns{float: right;}
+.sns{float: right; display: none;}
 .sns a:first-child{margin-right: 30px;}
 
 .sub-footer{height: 78px;}
@@ -388,7 +389,8 @@ footer .grid p {
 }
 
 /*portfolio*/
-.portf_box{height: 100%;position: relative;}
+.portf_box{height: 100%;}
+
 .left_box {
     float: left;
     width: 50%;
@@ -424,6 +426,7 @@ footer .grid p {
     width: 100%;
     height: 100%;
     background-size:cover;
+    background-position: center;
 }
 
 .right_box ul li:nth-child(1) a{background-image: url(../img/bun.png)}
@@ -437,6 +440,24 @@ footer .grid p {
 .right_box ul li:nth-child(5) a{background-image: url(../img/vdas.png)}
 
 
+@media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
+    .left_box {
+        float: none;
+        width: 100%;
+        height: 560px;
+    }
+    
+    .right_box {
+        float: none;
+        width: 100%;
+        overflow-y:none;
+    }
+    
+    .right_box ul li {
+        width:70%;
+        height: 320px;
+    }
+}
 
 
 
