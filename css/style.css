@@ -236,6 +236,7 @@ header h1 a {
     text-align: center;
     font-size: 22px;
     line-height: 69px;
+    text-decoration: none;
 }
 
 footer {
