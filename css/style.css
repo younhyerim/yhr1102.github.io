@@ -281,12 +281,11 @@ footer .grid p {
             margin-bottom: 32px;
     }
     .text_box h2{margin-bottom: 20px;}
-    
+    .main .text_box{padding-top: 12%;}
     .main .text_box p{margin-bottom: 8px;}
     
     .main .text_box a {
-        height: 68px;
-        line-height: 70px;
+        display: none;
     }
     
     .main_3 .text_box {
