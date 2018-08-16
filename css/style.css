@@ -503,7 +503,9 @@ footer .grid p {
 
 .right_box ul li:nth-child(4) a{background-image: url(../img/ad.png)}
 
-.right_box ul li:nth-child(5) a{background-image: url(../img/vdas.png)}
+.right_box ul li:nth-child(5) a{background-image: url(../img/ozi.png)}
+
+.right_box ul li:nth-child(6) a{background-image: url(../img/vdas.png)}
 
 
 @media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/

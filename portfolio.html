@@ -8,12 +8,6 @@
 <meta name="robots" content="noindex">
 <title>yunhyerim portfolio</title>
 
-<!-- 파비콘 링크 -->
-<link rel="Shortcut Icon" href="/favicon.ico"/>
-<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
-
-
-
 <!-- 스타일시트 링크 -->
 
 <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -31,11 +25,7 @@
         <div class="container">
             <h1><a href="./index.html"></a></h1>
             <div class="navbar-header">
-            <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left">
-                <span class="icon-bar">
-                </span>
-                <span class="icon-bar"></span>
-            </button>
+            <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span></button>
         </div>
         <div class="navbar-inverse side-collapse in">
             <nav role="navigation" class="navbar-collapse">
@@ -71,6 +61,10 @@
                 </a>
             </li>
             <li>
+                <a href="#" class="tototo" >        
+                </a>
+            </li>
+            <li>
                 <a href="http://yhr1102.dothome.co.kr/index.php" target="_blank">        
                 </a>
             </li>
@@ -90,12 +84,11 @@
 
 
 <!-- jQuery 인라인 호출 -->
-<script type="text/javascript">
-jQuery(function($) {
-    
-    // 단 높이 동기화
-
-    
-});
+<script>
+    $(document).ready(function(){
+        $("tototo").click(function(){
+            alert("시발")
+        });
+    });
 </script>
 </html>
