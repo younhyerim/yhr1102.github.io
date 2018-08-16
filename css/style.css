@@ -379,6 +379,7 @@ footer .grid p {
     font-size: 25px;
     font-weight: 600;
     margin-bottom:15px;
+    text-transform: uppercase;
 }
 
 .skill-box div p {
