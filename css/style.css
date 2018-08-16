@@ -282,12 +282,19 @@ footer .grid p {
     
     .main .text_box p{margin-bottom: 8px;}
     
+    .main .text_box a {
+        height: 68px;
+        line-height: 70px;
+    }
+    
     .main_3 .text_box {
         padding-left: 0;
         padding-top: 20%;
     }
     
     .main_3{background-size: 100%;}
+    
+    .text_box p{margin-bottom:28px;}
     
     footer .grid {
         padding: 3px;
