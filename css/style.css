@@ -54,7 +54,7 @@ header {
     position: absolute;
     z-index: 100;
     width: 100%;
-    padding: 15px 40px;
+    padding: 15px 0px;
 }
 
 header .container{}
@@ -77,6 +77,16 @@ header h1 a {
 .navbar-collapse {
     float: right;
     margin-top: 25px;
+}
+
+.navbar-collapse .navbar-nav li a:hover {
+    color:#ff039d;
+    transition: .5s;
+}
+
+.header-sub .navbar-inverse .navbar-nav>li>a:hover {
+    color:#ff039d;
+    transition: .5s;
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -145,6 +155,7 @@ header h1 a {
 
 .text_box h1 {
     font-size: 60px;
+    font-weight: 600;
     margin-bottom: 70px;
 }
 
@@ -226,27 +237,33 @@ footer .grid h1 a {
     background-size: 70%
 }
 
-footer .grid p{float: left;font-size: 14px;margin-left: 40px;}
+footer .grid p {
+    float: left;
+    font-size: 14px;
+    margin-left: 40px;
+}
 
 .sns{float: right;}
 .sns a:first-child{margin-right: 30px;}
 
-
+.sub-footer{height: 78px;}
+.sub-footer .grid {
+    width: 90.125vw;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
 
 /*abuot*/
+.navbar-nav>li>a{text-transform: uppercase;}
 
 .header-sub{padding-bottom: 60px;}
 
 .header-sub .navbar-inverse .navbar-nav>li>a {
     color: #303030;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
 @media screen and (max-width:768px) { /*화면크기가 768 이하인 경우*/
-    .header-sub .navbar-inverse .navbar-nav>li>a {
-    color: #fff;
-    }
+
 }
 
 
@@ -327,11 +344,9 @@ footer .grid p{float: left;font-size: 14px;margin-left: 40px;}
 .skill-box h1 {
     padding: 20px 0px 85px; 
     border-top:4px solid #303030;
+    font-weight: 600;
 }
 
-@media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
-    .skill-box h1{padding:20px 16px 85px;}
-}
 
 .skill-box div {
     float:left;
@@ -341,156 +356,85 @@ footer .grid p{float: left;font-size: 14px;margin-left: 40px;}
 
 @media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
     .skill-box .div{margin-bottom: 60px;}
+    .skill-box{padding: 0px 16px;}
+    .skill-box div{width: 100%;margin-bottom: 86px;}
 }
 
 .skill-box div span {
     display: block;
-    width: 110px;
-    height: 110px;
+    width: 72px;
+    height: 72px;
     border-radius: 5px;
-    background-color: #322d3a;
-    margin-bottom: 64px;
+    background-color:#322d3a;
+    margin-bottom: 46px;
     text-align: center;
-    font-size: 50px;
+    font-size: 36px;
     color: #ff039d;
     font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    line-height: 105px;
+    font-weight: 700;
+    line-height: 73px;
 }
 .skill-box div h2 {
     font-size: 25px;
+    font-weight: 600;
     margin-bottom:15px;
 }
 
 .skill-box div p {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 28px;
     padding-right: 80px;
+    color: #555
 }
 
 /*portfolio*/
-.portfolio_container h1 {
-    font-size: 60px;
-    margin-bottom: 50px;
-}
-.portfolio_list ul li {
+.portf_box{height: 100%;position: relative;}
+.left_box {
     float: left;
-    width: 48%;
-    height: 600px;
-    margin-right: 2%;
-    margin-top: 2%;
-    border-top:1px solid #333;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    width: 50%;
+    height: 100%;
+    background-color: #4402a3;
+    background-image: url(../img/p_main.png);
+    background-size: 70%;
+    background-position: center bottom;
 }
 
-.portfolio_list ul li:nth-child(2n){margin-right: 0;}
-
-@media screen and (max-width:992px) { /*화면크기가 768 이하인 경우*/
-    .portfolio_list ul li {
-        width: 100%;
-        margin-right: 0;
-    }
+.right_box {
+    float: right;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #f4edff;
+    padding-top:200px;
 }
 
-
-.portfolio_list ul li h2 {
-    font-size: 40px;
-    margin-bottom: 50px;
+.right_box ul li {
+    width: 50%;
+    height:400px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 220px;
+    padding: 16px;
+    padding: 10px;
+    box-shadow: 5px 10px #d1d1d1;
 }
 
-.portfolio_list ul li p{font-size: 20px;}
-.portfolio_list ul li p span{margin-right:30px;}
-
-.portfolio_list ul li div {
+.right_box ul li a {
+    display: block;
     width: 100%;
-    height: 400px;
-    background-color: #000;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
+    background-size:cover;
 }
 
-.portfolio_list ul li img{width: 20px; margin-right:10px;}
+.right_box ul li:nth-child(1) a{background-image: url(../img/bun.png)}
 
-.title-arch {
-    text-align: center;
-    margin: 50px 0;
-    font-size: 22px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+.right_box ul li:nth-child(2) a{background-image: url(../img/emp.png)}
 
-.project-2 {
-	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
-}
+.right_box ul li:nth-child(3) a{background-image: url(../img/dooson.png)}
 
-.project-3 {
-	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
-}
+.right_box ul li:nth-child(4) a{background-image: url(../img/ad.png)}
 
-.project-4 {
-	background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
-}
-
-.project-hover {
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	opacity: 0;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	background-color: rgba(186, 232, 2, 0.7);
-    box-sizing: border-box;
-    padding:10% 5%;
-}
-
-.project-hover hr {
-	height: 30px;
-	width: 0;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	background-color: rgba(255, 255, 255, 1);
-	border: 0;
-}
-
-.project-hover a {
-	color: rgba(255, 255, 255, 1);
-	padding: 2px 22px;
-	line-height: 40px;
-	border: 2px solid rgba(255, 255, 255, 1);
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-.project-hover a:hover {
-	border-color: rgba(51, 51, 51, 1);
-	color: rgba(51, 51, 51, 1);
-	background-color: #FFF;
-}
-
-.project:hover .project-hover {
-	opacity: 1;
-}
-
-.project:hover .project-hover hr {
-	width: 100%;
-	height: 5px;
-}
-
-
-
-
-
-
-
-
+.right_box ul li:nth-child(5) a{background-image: url(../img/vdas.png)}
 
 
 
