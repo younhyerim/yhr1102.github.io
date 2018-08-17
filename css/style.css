@@ -217,13 +217,13 @@ header h1 a {
 .main .text_box a {
     display: inline-block;
     width: 226px;
-    height: 84px;
+    height: 68px;
     border-radius: 50px;
     background-color: #ff039d;
     color:#fff;
     text-align: center;
     font-size: 22px;
-    line-height: 84px;
+    line-height: 70px;
 }
 
 .text_box a {
