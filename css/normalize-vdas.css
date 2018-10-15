@@ -36,13 +36,12 @@ div,h1,h2,h3 {
 }
 
 h1 {
-    font-family: 'Raleway', sans-serif;
-    text-transform:uppercase;
+    font-family: 'Roboto', sans-serif;
     color: #303030;
 }
 
 h2,h3,h4 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #303030;
 }
 
